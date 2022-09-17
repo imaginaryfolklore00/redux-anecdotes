@@ -10,8 +10,7 @@ const notificationSlice = createSlice({
     initialState,
     reducers: {
         newNotification(state, action) {
-            const content = action.payload
-            state.message = content
+            state.message = action.payload
             state.visible = true
         },
         clear(state, action) {
